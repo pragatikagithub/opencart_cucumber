@@ -56,6 +56,7 @@ public class BaseClass
 	 			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
 		
 	 		}
+	 		//launching browser based on condition - locally
 	 		else if(getProperties().getProperty("execution_env").equalsIgnoreCase("local"))
 	 		{
 	 			switch(getProperties().getProperty("browser").toLowerCase()) 
